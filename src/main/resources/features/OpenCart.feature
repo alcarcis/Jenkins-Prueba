@@ -1,7 +1,7 @@
 #language: es
 Característica: Compra en la pagina Open Cart
 
-  
+  @Testing
   Esquema del escenario: Compra en la pagina Open Cart
     Dado Usuario ingresa pagina selecciona My Account-Login "<caso_prueba>"
     Cuando Usuario ingresa su usuario y contrasena "<caso_prueba>"

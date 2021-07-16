@@ -233,9 +233,9 @@ public class CartPage extends BaseClass {
             sleep(2000);
             typeText(driver, OpenCartObjects.INPUT_COUNTRY, country);
             sleep(2000);
-            typeText(driver, OpenCartObjects.INPUT_STATE, state);
+            //typeText(driver, OpenCartObjects.INPUT_STATE, state);
+            selectByVisibleText(driver, OpenCartObjects.INPUT_STATE, state);
             sleep(3000);
-
             click(driver, OpenCartObjects.BTN_CONTINUE);
             sleep(2000);
             click(driver, OpenCartObjects.BTN_CONTINUE1);

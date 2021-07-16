@@ -84,7 +84,7 @@ public class CartPage extends BaseClass {
         mensaje = "Hacemos click en Show all Laptops & Notebooks";
         try {
             actions = new Actions(driver);
-            Thread.sleep(500);;
+            Thread.sleep(500);
             WebElement element = driver.findElements((OpenCartObjects.HOVER_LAPTOP)).get(0);
             actions.moveToElement(element).perform();
             element.findElement(OpenCartObjects.CLICK_ALL_LAPTOP).click();
@@ -108,20 +108,20 @@ public class CartPage extends BaseClass {
         try {
             Thread.sleep(3000);
             scroll(driver,0,400);
-            Thread.sleep(500);;
+            Thread.sleep(500);
             click(driver, OpenCartObjects.CLICK_LAPTOP_HP);
             sleep(3000);
             scroll(driver,0,550);
             click(driver, OpenCartObjects.ADD_LAPTOP_HP);
             sleep(3000);
             actions = new Actions(driver);
-            Thread.sleep(500);;
+            Thread.sleep(500);
             WebElement element = driver.findElements((OpenCartObjects.HOVER_LAPTOP)).get(0);
             actions.moveToElement(element).perform();
             element.findElement(OpenCartObjects.CLICK_ALL_LAPTOP).click();
             sleep(3000);
             scroll(driver,0,400);
-            Thread.sleep(500);;
+            Thread.sleep(500);
             click(driver, OpenCartObjects.CLICK_MACKBOOK);
             sleep(3000);
             scroll(driver,0,500);
@@ -233,7 +233,8 @@ public class CartPage extends BaseClass {
             sleep(2000);
             typeText(driver, OpenCartObjects.INPUT_COUNTRY, country);
             sleep(2000);
-            typeText(driver, OpenCartObjects.INPUT_STATE, state);
+            //typeText(driver, OpenCartObjects.INPUT_STATE, state);
+            selectByVisibleText(driver, OpenCartObjects.INPUT_STATE, state);
             sleep(3000);
 
             click(driver, OpenCartObjects.BTN_CONTINUE);

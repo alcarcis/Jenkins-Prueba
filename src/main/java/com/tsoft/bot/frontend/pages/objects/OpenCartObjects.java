@@ -56,7 +56,7 @@ public class OpenCartObjects {
     //public static final By INPUT_STATE=By.xpath("//*[@id=\"input-payment-zone\"]/option[16]");
     public static final By INPUT_STATE=By.name("zone_id");
     //*[@id="button-payment-address"]
-    public static final By BTN_CONTINUE=By.id("button-payment-address");
+    public static final By BTN_CONTINUE=By.cssSelector("#button-payment-address");
 
     public static final By BTN_CONTINUE1=By.xpath("//*[@id=\"button-shipping-address\"]");
     public static final By BTN_CONTINUE2=By.xpath("//*[@id=\"button-shipping-method\"]");

@@ -270,6 +270,7 @@ public class CartPage extends BaseClass {
             if(isDisplayed(driver,OpenCartObjects.CONFIRM_ORDER))
                 System.out.println("Compra realizada con exito");
 
+                sleep(3000);
                 stepPass(driver, mensaje);
                 generateWord.sendText(mensaje);
                 generateWord.addImageToWord(driver);

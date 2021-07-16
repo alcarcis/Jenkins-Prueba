@@ -12,6 +12,6 @@ Característica: Compra en la pagina Open Cart
     Y Procede a realizar el checkout
     Y Procede a llenar el detalle "<caso_prueba>"
     Entonces Se valida la compra
-    Ejemplos: :
+    Ejemplos:
       | caso_prueba |
       |           1 |

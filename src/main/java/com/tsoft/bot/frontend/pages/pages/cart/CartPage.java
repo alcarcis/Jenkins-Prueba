@@ -224,28 +224,28 @@ public class CartPage extends BaseClass {
             String state = getData().get(countPage).get(ExcelDataObjects.COLUMN_STATE);
 
             typeText(driver, OpenCartObjects.INPUT_NAME, name);
-            sleep(1000);
+            sleep(2000);
             typeText(driver, OpenCartObjects.INPUT_LASTNAME, lastname);
-            sleep(1000);
+            sleep(2000);
             typeText(driver, OpenCartObjects.INPUT_ADDRESS, address);
-            sleep(1000);
+            sleep(2000);
             typeText(driver, OpenCartObjects.INPUT_CITY, city);
-            sleep(1000);
+            sleep(2000);
             typeText(driver, OpenCartObjects.INPUT_COUNTRY, country);
-            sleep(1000);
+            sleep(2000);
             typeText(driver, OpenCartObjects.INPUT_STATE, state);
-            sleep(1000);
+            sleep(3000);
 
             click(driver, OpenCartObjects.BTN_CONTINUE);
-            sleep(1000);
+            sleep(2000);
             click(driver, OpenCartObjects.BTN_CONTINUE1);
-            sleep(1000);
+            sleep(2000);
             click(driver, OpenCartObjects.BTN_CONTINUE2);
-            sleep(1000);
+            sleep(2000);
             click(driver, OpenCartObjects.CHECKBOX_TERMS);
-            sleep(1000);
+            sleep(2000);
             click(driver, OpenCartObjects.BTN_CONTINUE3);
-            sleep(1000);
+            sleep(2000);
 
             click(driver, OpenCartObjects.BTN_CONFIRM);
             sleep(3000);
